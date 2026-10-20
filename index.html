@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two truths and a Lie</title>
+</head>
+<body style="background-color: beige;">
+    <h1>
+        Taylors truth and lie game
+    </h1>
+    <hr>
+    
+    <h2>
+        Introductions 
+    </h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname"><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname"><br />
+        <label for="age">
+            Age:
+        </label><br />
+        <input type="number" name="age" id="age"><br />
+    </form>
+    <br />
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;">
+        Welcome
+    </p>
+
+    <h2>
+        Warm up trivia question 
+    </h2>
+    <p>
+        What is the only food that can not go bad?
+    </p>
+    <p id="trivia1-answer"></p>
+  <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">
+            Dark chocolate
+        </label><br />
+
+          <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">
+           Tuna
+        </label><br />
+
+          <input type="radio" name="trivia1" id="honey">
+        <label for="honey">
+           honey
+        </label><br />
+  </form>
+  <input type="button" value="SUBMIT" onclick="trivia1();">
+
+    <script src="JS/truth.js"></script>
+</body>
+</html>
