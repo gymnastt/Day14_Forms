@@ -46,12 +46,13 @@ function trivia2() {
 
     // give result based on what they selected
     if (yesSelected) {
-        triviaAnswer.innerHTML = fname + ", you are correct!"
-    }
-    else if (noSelected) {
         triviaAnswer.innerHTML = fname + ", you are wrong!"
     }
-    else if (maybeSelected) {
-        triviaAnswer.innerHTML = fname + ", you are unsure!"
+    else if (noSelected) {
+        triviaAnswer.innerHTML = fname + ", you are correct!"
     }
+    else if (maybeSelected) {
+        triviaAnswer.innerHTML = fname + ", you are wrong!"
+    }
+
 }
