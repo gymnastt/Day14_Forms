@@ -33,3 +33,25 @@ function trivia1() {
     }
 
 }
+
+
+
+function trivia2() {
+    let triviaAnswer = document.getElementById("trivia2-answer");
+
+    // get values from form 
+    let yesSelected = document.getElementById("statement1").checked;
+    let noSelected = document.getElementById("statement2").checked
+    let maybeSelected = document.getElementById("statement3").checked
+
+    // give result based on what they selected
+    if (yesSelected) {
+        triviaAnswer.innerHTML = fname + ", you are correct!"
+    }
+    else if (noSelected) {
+        triviaAnswer.innerHTML = fname + ", you are wrong!"
+    }
+    else if (maybeSelected) {
+        triviaAnswer.innerHTML = fname + ", you are unsure!"
+    }
+}
